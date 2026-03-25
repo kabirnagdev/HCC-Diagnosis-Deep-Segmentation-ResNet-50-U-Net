@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter outputs and checkpoints
+*.nbconvert.ipynb
+
+# Logs and temp
+logs/
+*.log
+cache/
+
+# Build / packaging
+dist/
+build/
+
+# Model/data artifacts (keep structure, ignore heavy binaries)
+*.pth
+*.pt
+*.ckpt
+*.nii
+*.nii.gz
+*.zip
+
+# Keep metadata and lightweight placeholders when needed
+!models/model_info.json
+
+# Generated outputs
+output/
+results/
+slices/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Environment files
+.env
+.env.*

@@ -1,0 +1,37 @@
+{
+  "architecture": "MobileNet-V2",
+  "num_classes": 3,
+  "class_names": [
+    "Background",
+    "Liver",
+    "Tumor"
+  ],
+  "image_size": 224,
+  "preprocessing": {
+    "hu_window": [
+      -75,
+      150
+    ],
+    "clahe_clip_limit": 0.01,
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "test_accuracy": 95.3125,
+    "test_sensitivity": 92.85714285714286,
+    "test_dice": 89.01161683488859
+  },
+  "training": {
+    "epochs": 15,
+    "learning_rate": 0.001,
+    "batch_size": 32
+  }
+}
